@@ -5,7 +5,6 @@ public class Number13 {
     public static int roman(String s) {
         String[] ary = s.split("");
 
-        System.out.println(ary.length);
         int romanInt = 0;
         for (int i=0; i<ary.length;i++) {
             if ((i+1) < ary.length) {
