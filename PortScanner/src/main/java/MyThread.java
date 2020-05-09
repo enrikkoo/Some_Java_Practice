@@ -38,6 +38,7 @@ public class MyThread implements Runnable {
         synchronized (lock) {
             try (FileWriter writer = new FileWriter(FILENAME)) {
                 writer.write(obj.toJSONString());
+                writer.close();
             } catch (IOException e) {
                 e.printStackTrace();
             }
